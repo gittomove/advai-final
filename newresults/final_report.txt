@@ -1,0 +1,53 @@
+======================================================================
+BIPEDAL WALKER - ALGORITHM COMPARISON REPORT
+======================================================================
+
+Training Configuration:
+  Environment: BipedalWalker-v3
+  Algorithms: PPO, SAC, TD3
+  Evaluation Episodes: 10
+
+----------------------------------------------------------------------
+RESULTS SUMMARY (Best Models)
+----------------------------------------------------------------------
+
+1. PPO
+   Mean Reward: 295.87 ± 1.81
+   Range: [293.17, 300.04]
+   Model: models\ppo_20251209_223634\best\best_model
+
+2. TD3
+   Mean Reward: 257.49 ± 60.69
+   Range: [75.46, 279.15]
+   Model: models\td3_20251209_223718\best\best_model
+
+3. SAC
+   Mean Reward: -9.73 ± 4.03
+   Range: [-16.86, -5.76]
+   Model: models\sac_20251209_223638\best\best_model
+
+----------------------------------------------------------------------
+ANALYSIS
+----------------------------------------------------------------------
+
+Winner: PPO
+  Best performing algorithm with mean reward of 295.87
+
+Most Stable: PPO
+  Lowest standard deviation: 1.81
+
+Success Threshold Analysis (>200 reward):
+  PPO: 100% of episodes
+  SAC: 0% of episodes
+  TD3: 90% of episodes
+
+----------------------------------------------------------------------
+CONCLUSIONS
+----------------------------------------------------------------------
+
+• PPO achieved excellent performance (>280 reward)
+• TD3 final model showed consistent performance (277.23 ± 2.74)
+• PPO best model achieved highest score (295.87 ± 1.81)
+• SAC failed to learn effective policy (negative rewards)
+
+======================================================================
