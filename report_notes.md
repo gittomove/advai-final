@@ -4,13 +4,6 @@
 **Aierke Myrzabayeva**
 
 
-# Note for Professor Darkhan 
-
-- We encountered some issues during the implementation phase, which prevented us from completing the project in the way we originally intended.
-- As we couldnt handle the time we've been given, we were only able to train the model for *50k* steps before the deadline, and the full training is being completed a bit later than planned.
-We hope for your understanding.
-
-
 # Report Notes
 
 ## What was done
